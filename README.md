@@ -1,0 +1,1 @@
+This project oughts to create a library for a variety of useful functions that will be helpful in future projects. The library includes functions for string manipulation, memory allocation, and linked list management, among others.
