@@ -6,6 +6,9 @@ The goal of this project is to gain a deep understanding of how basic C function
 
 All functions are written in C and follow the constraints and norms defined by 42.
 
+This library is intended to be expanded and reused throughout the 42 cursus.
+Its implementation focuses on clarity, correctness, and robustness rather than optimization.
+
 <br/>
 
 ## Project Objectives
@@ -115,3 +118,32 @@ The library is divided into several parts:
     - ft_lstiter
 
     - ft_lstmap
+
+  <br/>
+
+## Compilation
+
+To compile the library, run:
+
+```bash
+make
+```
+This will generate the static library file:
+```bash
+libft.a
+```
+Additional rules:
+```bash
+make clean     # Removes object files
+make fclean    # Removes object files and libft.a
+make re        # Recompiles the library
+```
+
+  <br/>
+
+## Usage
+
+In order to use the functions of the Libft you have to include the header file in your project:
+```code
+#include "libft.h"
+```
