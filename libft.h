@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mparra-s <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/08 12:19:02 by mparra-s          #+#    #+#             */
-/*   Updated: 2025/04/23 10:09:02 by mparra-s         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef LIBFT_H
 # define LIBFT_H 
 
@@ -71,3 +59,4 @@ int		ft_strncmp(const char *src1, const char *src2, size_t n);
 int		ft_tolower(int letter);
 int		ft_toupper(int letter);
 #endif
+
