@@ -23,8 +23,6 @@ Its implementation focuses on clarity, correctness, and robustness rather than o
 
 <br/>
 
-
-
 ## Norms and Constraints
 
   - Written in C
@@ -67,7 +65,6 @@ The library is divided into several parts:
 
   <br/>
 
-
   - Part 2 – Additional Functions
 
     Utility functions not present in libc but useful for later projects:
@@ -99,27 +96,35 @@ The library is divided into several parts:
   - Bonus Part – Linked Lists
 
     Functions to manipulate singly linked lists using the following structure:
-    Bonus functions include:
 
-    - ft_lstnew
+  ```c
+  typedef struct s_list
+  {
+      void            *content;
+      struct s_list   *next;
+  }   t_list;
+  ```
+  Bonus functions include:
 
-    - ft_lstadd_front
+  - ft_lstnew
 
-    - ft_lstadd_back
+  - ft_lstadd_front
 
-    - ft_lstsize
+  - ft_lstadd_back
 
-    - ft_lstlast
+  - ft_lstsize
 
-    - ft_lstdelone
+  - ft_lstlast
 
-    - ft_lstclear
+  - ft_lstdelone
 
-    - ft_lstiter
+  - ft_lstclear
 
-    - ft_lstmap
+  - ft_lstiter
 
-  <br/>
+  - ft_lstmap
+
+<br/>
 
 ## Compilation
 
@@ -129,7 +134,7 @@ To compile the library, run:
 make
 ```
 This will generate the static library file:
-```bash
+```text
 libft.a
 ```
 Additional rules:
@@ -138,12 +143,11 @@ make clean     # Removes object files
 make fclean    # Removes object files and libft.a
 make re        # Recompiles the library
 ```
-
-  <br/>
+<br/>
 
 ## Usage
 
 In order to use the functions of the Libft you have to include the header file in your project:
-```code
+```c
 #include "libft.h"
 ```
